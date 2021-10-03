@@ -1,0 +1,36 @@
+﻿@model Hw2_EnesBayramAfşar.Models.KitapDetay
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>KitapDetay</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BolumSayisi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BolumSayisi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KitapSayfasi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KitapSayfasi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KitapAgirlik)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KitapAgirlik)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.KitapDetayId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

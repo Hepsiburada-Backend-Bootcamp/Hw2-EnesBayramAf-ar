@@ -1,0 +1,30 @@
+﻿@model Hw2_EnesBayramAfşar.Models.YayınEvi
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>YayınEvi</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YayinEviAdi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YayinEviAdi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Konum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Konum)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.YayinEvi_Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
